@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body{
+                background-color: rgb(205, 1, 137) ;
+            }
+            .size{
+                display: inline-block;
+                width: 125px;
+                color: white;
+            }
+            div{
+                margin-left: 20%;
+                margin-right: 20%;
+                margin-top: 10%;
+                height:70vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color:rgb(114, 3, 77) ;
+            }
+            #register{
+                width: 300px;
+                cursor: pointer;
+            }
+            .size-1{
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form>
+                <label for="name" class="size">Name:</label>
+                <input type="text" name="name" placeholder="your name" required><br><br>
+                <label for="email" class="size">Email:</label>
+                <input type="email" name="email" placeholder="your email" required><br><br>
+                <label for="pass" class="size">Password:</label>
+                <input type="password" name="pass" required><br><br>
+                <label for="phone" class="size">Phone Number:</label>
+                <input type="tel" name="phone" required><br><br>
+                <label for="gender" class="size">Gender:</label>
+                <label for="male" class="size-1">Male:</label>
+                <input type="radio" name="gender">
+                <label for="female" class="size-1">Female:</label>
+                <input type="radio" name="gender">
+                <label for="other" class="size-1">Other:</label>
+                <input type="radio" name="gender"><br><br>
+                <label for="lan" class="size">language</label>
+                <select>
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Tamil</option>
+                    <option>Hindi</option>
+                    <option>Kannada</option>
+                    <option>Malayalam</option>
+                </select><br>
+                <label for="zip" class="size">Zip Code:</label>
+                <input type="text" id="zip" name="zip" maxlength="5" pattern="[0-9]{5}" required><br><br>
+                <label for="about" class="size" id="size">About:</label>
+                <textarea id="textarea" rows="3" cols="20" placeholder="Write about yourself..."></textarea><br><br>
+                <button type="submit" id="register">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
